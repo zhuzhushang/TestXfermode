@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wx="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/linear_container"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        >
+
+        <com.noah.testxfermodes.WeiXinTabView
+            android:id="@+id/wx_weixin"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            wx:icon="@mipmap/iconfont_chat2"
+            wx:text="@string/wx_weixin"
+            wx:textSize="@dimen/wx_textsize"
+            wx:color="@color/wx_text_color"
+            />
+
+        <com.noah.testxfermodes.WeiXinTabView
+            android:id="@+id/wx_contact"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            wx:icon="@mipmap/iconfont_friend2"
+            wx:text="@string/wx_contact"
+            wx:textSize="@dimen/wx_textsize"
+            wx:color="@color/wx_text_color"
+            />
+
+        <com.noah.testxfermodes.WeiXinTabView
+            android:id="@+id/wx_faxian"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            wx:icon="@mipmap/iconfont_faxian2"
+            wx:text="@string/wx_faxian"
+            wx:textSize="@dimen/wx_textsize"
+            wx:color="@color/wx_text_color"
+            />
+
+        <com.noah.testxfermodes.WeiXinTabView
+            android:id="@+id/wx_me"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            wx:icon="@mipmap/iconfont_me2"
+            wx:text="@string/wx_me"
+            wx:textSize="@dimen/wx_textsize"
+            wx:color="@color/wx_text_color"
+            />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_above="@id/linear_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+
+</RelativeLayout>

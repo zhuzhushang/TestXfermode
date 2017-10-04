@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TestXfermodes</string>
+
+
+    <string name="wx_weixin">微信</string>
+    <string name="wx_contact">通讯录</string>
+    <string name="wx_faxian">发现</string>
+    <string name="wx_me">我</string>
+
+</resources>
