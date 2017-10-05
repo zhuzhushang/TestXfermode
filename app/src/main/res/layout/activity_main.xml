@@ -23,12 +23,13 @@
     <com.noah.testxfermodes.AlphaView
         android:id="@+id/alphaview"
         android:layout_width="match_parent"
+        android:visibility="gone"
         android:layout_height="match_parent" />
 
     <com.noah.testxfermodes.CircleImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:visibility="gone"
+        android:visibility="visible"
         />
 
 

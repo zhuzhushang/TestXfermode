@@ -6,10 +6,7 @@ import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
-import android.graphics.PorterDuff;
-import android.graphics.PorterDuffXfermode;
 import android.graphics.Rect;
-import android.graphics.RectF;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
@@ -214,21 +211,24 @@ public class CircleRectView extends View {
 //        canvas.drawRect(rect,paintGray);
 
 
-        int wh = 800;
-        Paint paintX = new Paint();
-        paintX.setAntiAlias(true);
-        paintX.setDither(true);
+//        int wh = 800;
+//        Paint paintX = new Paint();
+//        paintX.setAntiAlias(true);
+//        paintX.setDither(true);
+//
+//        RectF rectLayer = new RectF(0,0,800,800);
+//
+//        canvas.drawColor(Color.GREEN);
+//        int count = canvas.saveLayer(rectLayer,paintX);
+//        canvas.drawBitmap(mDst,0,0,paintX);
+//        paintX.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SRC_IN));
+//        canvas.drawBitmap(mSrc,150,150,paintX);
+//
+//        canvas.restoreToCount(count);
+//        paintX.setXfermode(null);
 
-        RectF rectLayer = new RectF(0,0,800,800);
 
-        canvas.drawColor(Color.GREEN);
-        int count = canvas.saveLayer(rectLayer,paintX);
-        canvas.drawBitmap(mDst,0,0,paintX);
-        paintX.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SRC_IN));
-        canvas.drawBitmap(mSrc,150,150,paintX);
 
-        canvas.restoreToCount(count);
-        paintX.setXfermode(null);
 
 
 
